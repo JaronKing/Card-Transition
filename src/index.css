@@ -23,7 +23,7 @@
 
 .swipe-out {
 	opacity: 0;
-    animation: swipeOut .5s ease-in;
+    animation: swipeOut .5s ease-out;
 }
 
 @keyframes swipeOut {
