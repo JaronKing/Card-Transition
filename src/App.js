@@ -1,29 +1,22 @@
-
+import React from "react";
+import { connect } from "react-redux";
+import ContactSteps from "./components/ContactSteps"
 
 function App() {
     return (
         <div className="relative">
-            <header className="max-w-7xl m-auto bg-blue-400 text-2xl p-5">
-                Sacramento Towing Company
+            <header className="max-w-7xl m-auto bg-red-300 text-2xl p-5 flex flex-row">
+                <img src="./images/towTruck.png" alt="logo" className="h-14 -mt-4 mx-4"/>
+                <div>Sacramento Towing Company</div>
             </header>
             
-            <div className="max-w-7xl min-h-fit bg-yellow-100 m-auto text-center flex flex-col text-3xl">
+            <div className="max-w-7xl min-h-fit bg-blue-100 m-auto text-center flex flex-col text-3xl">
                 <div className="p-10">Live Dispatch Ready</div>
 
-                <div className="bg-gray-200/50 min-h-96 mx-10 mt-10 grid md:grid-cols-1 md:grid-cols-2 gap-5 rounded-t-xl overflow-hidden">
-                    <div className="flex flex-col px-5 py-32 col-start-1">
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Need Immediate Assistance</button>
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Call Dispatch Instead</button>
-                    </div>
-                    <div className="" style={{backgroundImage: `url("./images/sacramentoMapArea.png")`}}></div>
-                    <div className="flex flex-col p-5 col-start-1 hidden">
-                        <div className="m-5">Type of Car trouble:</div>
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Need a Jump</button>
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Flat Tire</button>
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Tow</button>
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Out Of Gas</button>
-                        <button className="bg-blue-200 hover:bg-blue-300 p-5 m-2 rounded-lg">Other</button>
-                    </div>
+                <div className="bg-gray-100 shadow-lg min-h-96 mx-10 mt-10 grid md:grid-cols-1 md:grid-cols-2 rounded-t-xl overflow-hidden">
+                    <ContactSteps/>
+                    <div className="col-start-2" style={{backgroundImage: `url("./images/sacramentoMapArea.png")`}}></div>
+                    
                     <div className="flex flex-col p-5 col-start-1 hidden">
                         <div className="mb-5">
                             Enter Address (Google Suggestion):
@@ -41,8 +34,9 @@ function App() {
                 </div>
             </div>
             
-            <div className="max-w-7xl m-auto bg-blue-400 text-2xl p-5">
-                Sacramento Towing Company
+            <div className="max-w-7xl m-auto bg-red-300 text-2xl p-5 flex flex-row">
+                <img src="./images/towTruck.png" alt="logo" className="h-14 -mt-4 mx-4"/>
+                <div>Sacramento Towing Company</div>
             </div>
 
 
@@ -50,4 +44,9 @@ function App() {
     );
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+
+});
+
+export default connect(mapStateToProps, null)(App);
+

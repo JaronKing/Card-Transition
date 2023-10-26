@@ -2,4 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+.contact-step {
+	opacity: 1;
+	animation: swipeIn .5s ease-in;
+}
 
+@keyframes swipeIn {
+    0%{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    25% {
+    	opacity: .7;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.swipe-out {
+	opacity: 0;
+    animation: swipeOut .5s ease-in;
+}
+
+@keyframes swipeOut {
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    25% {
+    	opacity: .7;
+    }
+    100%{
+        transform: translate(50px);
+        opacity: 0;
+    }
+}
