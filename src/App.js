@@ -13,7 +13,7 @@ function App() {
             <div className="max-w-7xl min-h-fit bg-gray-200 m-auto text-center flex flex-col text-3xl">
                 <div className="p-10">Live Dispatch Ready</div>
 
-                <div className="bg-gray-100 shadow-t-lg min-h-96 mx-2 md:mx-10 mt-5 md:mt-10 grid md:grid-cols-1 md:grid-cols-2 rounded-t-xl overflow-hidden">
+                <div className="bg-gray-100 shadow-t-lg min-h-96 mx-2 md:mx-10 mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2 rounded-t-xl overflow-hidden">
                     <ContactSteps/>
                     <div className="col-start-2" style={{backgroundImage: `url("./images/sacramentoMapArea.png")`}}></div>
                 </div>
