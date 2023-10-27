@@ -6,7 +6,7 @@ import StepButton from "../StepButton";
 const WelcomeStep = ({ children }) => {
     return (
         <Step>
-            <div className="flex flex-col p-5 col-start-1">
+            <div className="flex flex-col">
                 <div className="m-5">Type of Car trouble:</div>
                 <StepButton stepTemplate="Location">Need a Jump</StepButton>
                 <StepButton stepTemplate="Location">Flat Tire</StepButton>
