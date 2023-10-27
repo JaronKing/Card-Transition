@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 const Step = ({ isExit, children }) => {
 	return (
-		<div className={`col-start-1 col-span-1 rounded-xl shadow-xl m-5 bg-gray-200/50
+		<div className={`col-start-1 col-span-1 rounded-xl shadow-xl m-5 bg-gray-200
 		 	contact-step ${isExit ? "swipe-out": ""}`}>
 			{ children }
 		</div>	
