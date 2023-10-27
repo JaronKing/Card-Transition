@@ -7,13 +7,9 @@ const WelcomeStep = ({ children }) => {
     return (
         <Step>
             <div className="flex flex-col p-5 col-start-1">
-                <div className="m-5">Type of Car trouble:</div>
-                <StepButton>Need a Jump</StepButton>
-                <StepButton>Flat Tire</StepButton>
-                <StepButton>Tow</StepButton>
-                <StepButton>Out Of Gas</StepButton>
-                <StepButton>Locked Keys In Car</StepButton>
-                <StepButton stepTemplate="Other">Other</StepButton>
+                <div className="m-5">Other issue:</div>
+                <textarea className="p-2 m-2 rounded-lg border-2 border-gray-200" type="textarea" rows="5" placeholder="Write your issue here..."/>
+                <StepButton stepTemplate="Location">Continue</StepButton>
             </div>
         </Step>
     )

@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import Step from "./Step";
 import StepButton from "../StepButton";
 
-const ContactDispatch = ({ children }) => {
+const ContactDispatchStep = ({ children }) => {
 	return (
 		<Step>
 			<div className="flex flex-col px-5 py-10">
@@ -22,4 +22,4 @@ const mapStateToProps = (state) => ({
 
 });
 
-export default connect(mapStateToProps, null)(ContactDispatch);
+export default connect(mapStateToProps, null)(ContactDispatchStep);
