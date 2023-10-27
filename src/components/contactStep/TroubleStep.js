@@ -8,11 +8,11 @@ const WelcomeStep = ({ children }) => {
         <Step>
             <div className="flex flex-col p-5 col-start-1">
                 <div className="m-5">Type of Car trouble:</div>
-                <StepButton>Need a Jump</StepButton>
-                <StepButton>Flat Tire</StepButton>
-                <StepButton>Tow</StepButton>
-                <StepButton>Out Of Gas</StepButton>
-                <StepButton>Locked Keys In Car</StepButton>
+                <StepButton stepTemplate="Location">Need a Jump</StepButton>
+                <StepButton stepTemplate="Location">Flat Tire</StepButton>
+                <StepButton stepTemplate="Location">Tow</StepButton>
+                <StepButton stepTemplate="Location">Out Of Gas</StepButton>
+                <StepButton stepTemplate="Location">Locked Keys In Car</StepButton>
                 <StepButton stepTemplate="Other">Other</StepButton>
             </div>
         </Step>

@@ -9,7 +9,7 @@ const ContactDispatchStep = ({ children }) => {
 			<div className="flex flex-col px-5 py-10">
 				<img className="w-1/2 rounded-full overflow-hidden m-auto py-10" src="./images/phone.jpeg"/>
                 <div>Phone:</div>
-                <div>(760) 898 - 6275</div>
+                <div className="pb-5">(760) 898 - 6275</div>
                 <StepButton stepTemplate="Welcome">
                 	Go Back
             	</StepButton>
