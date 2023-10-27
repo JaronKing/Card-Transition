@@ -13,6 +13,7 @@ const LocationStep = ({ children }) => {
                 <input className="text-3xl text-center p-5 rounded-lg border-2 border-gray-200 m-3" type="text"/>
                 <div className="p-5">Or</div> 
                 <StepButton>Get My Location</StepButton>
+                <StepButton>Continue</StepButton>
                 <StepButton>Go Back</StepButton>
             </div>
         </Step>
