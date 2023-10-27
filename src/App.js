@@ -19,10 +19,10 @@ function App() {
                 </div>
             </div>
             
-            <div className="max-w-7xl m-auto bg-red-200 text-2xl p-5 flex flex-row">
-                <img src="./images/towTruck.png" alt="logo" className="h-14 -mt-4 mx-4"/>
+            <footer className="max-w-7xl m-auto bg-red-200 text-2xl p-2 md:p-5 flex flex-row">
+                <img src="./images/towTruck.png" alt="logo" className="h-14 -mt-4 mx-2 md:mx-4"/>
                 <div>Sacramento Towing Company</div>
-            </div>
+            </footer>
 
 
         </div>
