@@ -2,40 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-.contact-step {
-	opacity: 1;
-	animation: swipeIn .5s ease-in;
+.card {
+    animation: swing 1s ease-out;
+    transform-origin: top;
+    transform: scaleY(1);
 }
 
-@keyframes swipeIn {
-    0%{
-        transform: translateX(-50px);
-        opacity: 0;
+@keyframes swing {
+    0% {
+        transform: perspective(400px) rotateX(-45deg);
     }
-    25% {
-    	opacity: .7;
+    20% {
+        transform: perspective(400px) rotateX(8deg);
     }
-    100%{
-        transform: translateX(0px);
-        opacity: 1;
+    45% {
+        transform: perspective(400px) rotateX(-5deg);
+    }
+    65% {
+        transform: perspective(400px) rotateX(2deg);
+    }
+    95% {
+        transform: perspective(400px) rotateX(-1deg);
     }
 }
 
-.swipe-out {
-	opacity: 0;
-    animation: swipeOut .5s ease-out;
+.card.leave{
+    animation: leave .85s ease-out;
+    transform-origin: top center;
 }
 
-@keyframes swipeOut {
-    0%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-    25% {
-    	opacity: .7;
-    }
-    100%{
-        transform: translate(50px);
-        opacity: 0;
+@keyframes leave {
+    100% {
+        transform: perspective(2000px) rotateY(90deg);
     }
 }
+
+.card.enter{
+    animation: enter .85s ease-out;
+    transform-origin: top center;
+}
+
+@keyframes enter {
+    0% {
+        transform: perspective(2000px) rotateY(-90deg);
+    }
+    100% {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+}
+

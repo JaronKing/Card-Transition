@@ -1,15 +1,15 @@
 import React from "react";
 import { connect } from 'react-redux';
-import { contactChangeStep } from '../store/Actions';
+import { changeCard } from '../store/Actions';
 
-const StepButton = ({
+const CardButton = ({
     children, 
     color = "blue", 
     stepTemplate = "Welcome", 
-    doChangeStep
+    doChangeCard
 }) => {
     const handleChangeStep = () => {
-        doChangeStep(stepTemplate);
+        doChangeCard(stepTemplate);
     };
     const colorOptions = (color) => {
         switch (color) {
@@ -31,14 +31,14 @@ const StepButton = ({
     }
 
     return (
-        <button onClick={handleChangeStep} className={`p-5 m-2 rounded-lg ${colorOptions(color)}`}>
+        <button onClick={handleChangeStep} className={`p-5 m-2 rounded-lg bottom-0 right-0 absolute ${colorOptions(color)}`}>
             {children}
         </button>
     );
 }
 
 const mapDispatchToProps = (dispatch) => ({
-    doChangeStep: step => dispatch(contactChangeStep(step))
+    doChangeCard: step => dispatch(changeCard(step))
 })
 
-export default connect(null, mapDispatchToProps)(StepButton);
+export default connect(null, mapDispatchToProps)(CardButton);
