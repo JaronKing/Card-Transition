@@ -1,18 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
 import Cards from "./components/Cards";
+import Steam from "./components/Steam";
 
 function App() {
     return (
-        <div className="relative">
-            <header className="w-full text-2xl">
-                <div className="flex flex-row bg-gray-200 m-auto max-w-5xl p-2 md:p-5 m-auto shadow-lg text-center">
-                    <div>Software Idioms</div>
-                </div>
-            </header>
-            
+        <div className="bg-stone-300 h-screen mt-0">
             <Cards/>
+            <Steam/>
+            <div className="bg-black h-36 max-w-xs m-auto card">
 
+            </div>
         </div>
     );
 }

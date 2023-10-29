@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 const Card = ({ isExit, card, children }) => {
     return (
-        <div className={`max-w-5xl h-96 bg-stone-300 m-auto text-center text-3xl card 
+        <div className={`w-40 h-24 p-4 -mb-28 pt-6 mt-5 bg-gray-500 shadow-lg m-auto text-center text-3xl card 
                 ${isExit ? "leave": 
                     card !== "Welcome"? "enter" : ""
                 }

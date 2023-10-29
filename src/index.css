@@ -10,19 +10,22 @@
 
 @keyframes swing {
     0% {
-        transform: perspective(400px) rotateX(-45deg);
+        transform: perspective(400px) rotateX(45deg);
     }
     20% {
-        transform: perspective(400px) rotateX(8deg);
+        transform: perspective(400px) rotateX(-8deg);
     }
     45% {
-        transform: perspective(400px) rotateX(-5deg);
+        transform: perspective(400px) rotateX(5deg);
     }
     65% {
-        transform: perspective(400px) rotateX(2deg);
+        transform: perspective(400px) rotateX(-2deg);
     }
-    95% {
-        transform: perspective(400px) rotateX(-1deg);
+    75% {
+        transform: perspective(400px) rotateX(1deg);
+    }
+    90% {
+        transform: perspective(400px) rotateX(-.5deg);
     }
 }
 
